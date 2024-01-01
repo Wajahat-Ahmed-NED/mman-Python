@@ -3,7 +3,7 @@ import json
 import pypyodbc as odbc  
 
 # OpenAI API configuration
-api_key = "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"
+api_key = "<add your api key>"
 openai.api_key = api_key
 
 DB_NAME = "mman_21"
