@@ -171,24 +171,23 @@ def create_item(item: ItemCreate):
 
 
 
-
 def connect():
     try:
         # Database connection parameters
-        driver = 'Driver={ODBC Driver 17 for SQL Server};'
-        server = f'Server={host},{port};'
-        database = f'Database={db_name};'
-        trusted_connection = 'Trusted_Connection=yes;'
+        driver = 'ODBC Driver 17 for SQL Server'
+        server = host
+        database = db_name
+        username = user
 
         # Create the connection string
-        conn_str = odbc.connect(
-            f'{driver}{server}{database}{trusted_connection}'
-        )
+        conn_str = f'Driver={driver};Server={server};Database={database};UID={username};PWD={password};'
+        conn = odbc.connect(conn_str)
 
-        return conn_str  # Return the connection object
+        return conn  # Return the connection object
 
     except Exception as e:
         print(f"Error connecting to the database: {e}")
+
 
 
 
