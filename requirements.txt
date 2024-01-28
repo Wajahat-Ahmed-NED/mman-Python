@@ -4,3 +4,4 @@ sqlalchemy
 pypyodbc
 requests
 python-dotenv
+uvicorn
