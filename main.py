@@ -221,8 +221,6 @@ def updateMembership(key: int,membership_id:int, item: json ):
 origins = [
     "http://localhost",
     "http://localhost:3000",  # Example: Allow requests from these origins
-    "https://example.com",
-    "https://subdomain.example.com",
 ]
 
 # Add CORS middleware to the app
