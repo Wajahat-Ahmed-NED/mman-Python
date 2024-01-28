@@ -1,5 +1,0 @@
-INFO:     127.0.0.1:78705 - "GET /docs HTTP/1.1" 200 OK
-INFO:     127.0.0.1:78705 - "GET /openapi.json HTTP/1.1" 200 OK
-(pyodbc.InterfaceError) ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'HR\\2*********'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'ACCOUNTING\\10094535'. (18456)")
-(Background on this error at: https://sqlalche.me/e/20/rvf5)
-INFO:     127.0.0.1:78705 - "POST /getResponse/ HTTP/1.1" 200 OK
